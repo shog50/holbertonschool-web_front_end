@@ -1,17 +1,5 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
 
-html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 :root {
     --color-primary: #d73953;
     --color-secondary: #555555;
@@ -61,6 +49,18 @@ html {
     --section-tagline-margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
@@ -68,6 +68,8 @@ body {
     line-height: var(--line-height-base);
     color: var(--text-color);
     background-color: var(--color-white);
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -79,6 +81,7 @@ h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
+    margin-top: 0;
 }
 
 a {
@@ -211,12 +214,6 @@ ul.row {
 }
 
 .footer-address {
-    color: var(--text-color);
-}
-
-.footer-copyright {
-    margin: 0;
-    font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
